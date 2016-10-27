@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  .content(ng-app="workspaceModule" ng-controller="workspaceController" ng-init="workspace='#{name}'")
+    h3 WorkSpace #{name}
+    div.row
+      div.col-md-4
+        upload-files(files='files' workspace='workspace')
+      div.col-md-8
+        list-files(workspace='workspace' files='files' filesasignados='filesasignados' completos='completos')
+    process-files(filesasignados='filesasignados' completos='completos' workspace='workspace')
+    upload-calculos(workspace='workspace')
+  
+  
+  script(type='text/javascript' src='/assets/js/modules/workspaceModule.js').
+  script(type='text/javascript' src='/assets/js/services/workspaceService.js').
+  script(type='text/javascript' src='/assets/js/services/fileService.js').
+  script(type='text/javascript' src='/assets/js/components/workspace/directives/listFiles.js').
+  script(type='text/javascript' src='/assets/js/components/workspace/directives/uploadFiles.js').
+  script(type='text/javascript' src='/assets/js/components/workspace/directives/processFiles.js').
+  script(type='text/javascript' src='/assets/js/components/workspace/directives/uploadCalculos.js').
+  script(type='text/javascript' src='/assets/js/components/workspace/directives/processResultados.js').
+  

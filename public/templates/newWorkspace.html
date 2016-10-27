@@ -1,0 +1,12 @@
+<h4>Nuevo Workspace</h4>
+<div>
+    <div class="input">
+        <input type="text" name="name" ng-model="name"/>
+    </div>
+    <div class="actions">
+        <button ng-click="create(name)">Crear</button>
+    </div>
+    <div ng-show="messages !== ''">
+        {{ messages }}
+    </div>
+</div>

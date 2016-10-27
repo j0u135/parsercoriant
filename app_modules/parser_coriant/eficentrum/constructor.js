@@ -1,0 +1,32 @@
+var constructor = function(){
+	this.No = '';
+	this.Sociedad = '';
+	this.Division = '';
+	this.Doc_Material = '';
+	this.Fec_con = '';
+	this.Cla_Doc = '';
+	this.Prov = '';
+	this.Desc_prov = '';
+	this.Fec_ent_real = '';
+	this.Fec_ent_prop = '';
+	this.Imp_ml_no_iva = '';
+	this.Imp_md_no_iva = '';
+	this.Mon_pos = '';
+	this.Imp_ml_pm_iva = '';
+	this.Imp_md_pm_iva = '';
+	this.Refer = '';
+	this.Elem_pep = '';
+	this.Pedido = '';
+	this.Pos = '';
+	this.Con_mar = '';
+	this.Grup_com = '';
+	this.Descr = '';
+	this.Fec_sis = '';
+	this.Tlle = '';
+	this.Val3 = '';
+	this.Val4 = '';
+	this.Val5 = '';
+	this.Fecha_Reporte = '';	 
+};
+
+module.exports = constructor;

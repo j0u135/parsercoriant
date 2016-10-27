@@ -1,0 +1,12 @@
+<div class="rcorners">
+    <h3>Upload Files</h3>
+
+    <form id="uploadForm" enctype="multipart/form-data" action="/api/upload/files"
+          method="post">
+      <input type="file" file-model="newfiles" id="files" name="file" multiple/>
+      <input type="text" id="workspace" name="workspace" value="{{workspace}}" style="display: none;"/>
+      
+    </form>
+    
+    <button ng-click="uploadFiles()" ng-init="count=0">Subir Archivos</button>
+</div>

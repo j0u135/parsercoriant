@@ -1,0 +1,35 @@
+<div class="rcorners">
+    <h3>Procesar Archivos</h3>
+    
+    <div>
+        <button ng-click="processFiles()">Procesar</button>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Archivos Asignados</h4>
+            <div class="row" ng-repeat="asignado in filesasignados">
+                <div class="col-md-6">
+                    {{asignado.nombre}}
+                </div>
+                <div class="col-md-6">
+                    {{asignado.catalogacion}}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h4>Archivos</h4>
+            <div class="row" ng-repeat="file in processedFiles">
+                <div class="col-md-6">
+                    <div>{{file}}</div>
+                </div>
+                <div class="col-md-6">
+                    <div ng-click="descargarArchivoProcesado(file)">Download</div>
+                </div>
+            </div>
+            <div>
+                <button ng-click="descargarTodosProcesados()" type="button" class="btn btn-default">Descargar</button>
+            </div>
+        </div>
+    </div>
+</div>

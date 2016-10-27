@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    .content(ng-app='homeModule' ng-controller='homeController')
+        h3 Mis WorkSpaces 2
+        list-workspaces(workspaces='workspaces')
+        div
+          button.btn(ng-click="switchNewWorkspace()") Nuevo Workspace
+          div(ng-show="showNew")
+            new-workspace(workspaces='workspaces' messages='messages')
+          
+    
+    script(type='text/javascript' src='/assets/js/modules/homeModule.js').
+    script(type='text/javascript' src='/assets/js/services/workspaceService.js').
+    script(type='text/javascript' src='/assets/js/components/workspace/directives/listWorkspaces.js').
+    script(type='text/javascript' src='/assets/js/components/workspace/directives/newWorkspace.js').
+    
+    

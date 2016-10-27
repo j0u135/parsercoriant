@@ -1,0 +1,20 @@
+<div class="rcorners row">
+    <div class=col-md-3>
+        <h3>Upload Calculos</h3>
+        <form id="uploadFormCalculos" enctype="multipart/form-data"
+              method="post">
+          <input type="file" file-model="calculosFile" id="calculosFile" name="calculosFile" multiple/>
+          <input type="text" id="workspaceCalc" name="workspaceCalc" value="{{workspace}}" style="display: none;"/>
+          
+        </form>
+        <button ng-click="uploadFiles()">Subir Calculos</button>
+    </div>
+    <div class="col-md-5">
+        <h4>Archivos</h4>
+        <div class="row" ng-repeat="file in listaFilesCalculo">
+            <div class="col-md-5">
+                {{file}}
+            </div>
+        </div>
+    </div>
+</div>

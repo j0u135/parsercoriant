@@ -1,0 +1,25 @@
+{
+  "name": "parsercoriant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.4.7",
+    "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
+    "fs": "0.0.2",
+    "fstream": "^1.0.10",
+    "jade": "^1.11.0",
+    "json2xls": "^0.1.2",
+    "multer": "^1.2.0",
+    "tar-fs": "^1.13.2",
+    "tar-stream": "^1.5.2",
+    "xlsx": "^0.8.0"
+  }
+}
